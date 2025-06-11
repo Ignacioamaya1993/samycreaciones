@@ -1,0 +1,64 @@
+.site-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #f8f8f8;
+padding: 1rem 2rem;
+border-bottom: 2px solid #ccc;
+}
+
+.site-header .logo h1 {
+margin: 0;
+color: #444;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar a {
+margin-left: 1rem;
+text-decoration: none;
+color: #333;
+font-weight: 500;
+transition: color 0.3s;
+}
+
+.navbar a:hover {
+color: #009688;
+}
+
+.site-footer {
+background-color: #f1f1f1;
+padding: 1rem 2rem;
+border-top: 2px solid #ccc;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-content {
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 0.9rem;
+color: #555;
+}
+
+.designed-by {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.designed-by img {
+height: 30px;
+}
+
+.footer-design::after {
+content: "";
+background: url("../assets/logoia.png") no-repeat center;
+background-size: contain;
+width: 100px;
+height: 50px;
+display: inline-block;
+margin-left: 10px;
+}

@@ -1,0 +1,28 @@
+<div id="header-container"></div>
+<script>
+fetch("pages/header.html")
+    .then(res => res.text())
+    .then(data => {
+    document.getElementById("header-container").innerHTML = data;
+
+      // Si necesitás cargar un JS extra después del header, podés hacerlo así:
+      // const script = document.createElement("script");
+      // script.src = "scripts/algunaFuncionalidad.js";
+      // document.body.appendChild(script);
+    });
+</script>
+
+<!-- CONTENIDO DE LA PÁGINA -->
+<main>
+<!-- tu contenido -->
+</main>
+
+<!-- Carga del Footer -->
+<div id="footer-container"></div>
+<script>
+fetch("pages/footer.html")
+    .then(res => res.text())
+    .then(data => {
+    document.getElementById("footer-container").innerHTML = data;
+    });
+</script>
